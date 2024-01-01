@@ -6,7 +6,7 @@ colorama==0.4.6
 contourpy==1.2.0
 cycler==0.12.1
 distlib==0.3.7
-Django==5.0
+Django==4.2.8
 facenet-pytorch==2.5.3
 filelock==3.12.4
 fonttools==4.44.3
