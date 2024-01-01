@@ -1,0 +1,115 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "hy",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, Welcome to the Legal Ai ChatBot",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?",
+          "How can we  asset you?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "Knowedge",
+        "patterns": [
+          "information",
+          "Law",
+          "know",
+          "what can you do for me",
+          "What the model work"
+        ],
+        "responses": [
+          "We only provide the information of Law under act 299 to act 324 of Pakistan",
+          "I am designed to facilitate the user with the information of Law under act 299 to act 324 of Pakistan "
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },{
+        "tag": "information",
+        "patterns":["What do you mean by the  act in law?",
+        "What is section  related to?",
+        "Explain the section ?",
+        "Which person is layable to ",
+        "information about ",
+        "what is ?",
+        "Pakistan Penal Code Section ",
+        "PPC  Pakistan",
+        "Section  PPC",
+        "Pakistan Penal Code Section  full text",
+        "Full text of PPC ",
+        "PPC  legal provisions",
+        "Section  PPC Pakistan jurisdiction",
+        "PPC  case law Pakistan",
+        "Historical background of PPC Section ",
+        "Evolution of Section  in Pakistan Penal Code",
+        "Legal Commentary of ",
+        "Legal commentary on PPC Section ",
+        "Interpretation of Section  PPC",
+        "Expert opinions on PPC ",
+        "Landmark cases under PPC Section ",
+        "Precedents for Section  in Pakistan",
+        "Notable judgments related to PPC ",
+        "Comparison of murder laws in PPC and other jurisdictions",
+        "PPC Section ",
+        "Recent changes to PPC Section ",
+        "News on PPC  amendments",
+        "Official Government Sources of section  ",
+        "Pakistan government website PPC Section ",
+        "Official PPC Section  information",
+        "Text of Section  PPC",
+        "Full legal text murder law PPC",
+        "Complete wording of PPC Section ",
+        "Interpretation of PPC Section ",
+        "Meaning of terms in Section  PPC",
+        "How is Section  defined in PPC",
+        "PPC  case law precedents",
+        "Landmark cases under Section  PPC",
+        "Judicial decisions on PPC ",
+        "Legislative history of PPC Section ",
+        "Amendments to Section  over time",
+        "Changes in PPC murder laws",
+        "Comparative analysis of murder laws internationally",
+        "How does Pakistan's Section  compare globally",
+        "International standards for murder legislation",
+        "Enforcement of PPC Section ",
+        "Prosecution under Section  PPC",
+        "Law enforcement procedures for murder cases in Pakistan",
+        "PPC Section  discussion forum",
+        "Legal community opinions on PPC ",
+        "Lawyer insights on Section  PPC",
+        "Academic articles on PPC Section ",
+        "Research papers on murder laws in Pakistan",
+        "Scholarly analysis of PPC ",
+        "Public policy impact of PPC Section ",
+        "Societal implications of murder laws in Pakistan",
+        "Policy discussions on PPC ",
+        "Government publications on Section  PPC",
+        "Reports on murder statistics under PPC",
+        "Official documents related to PPC ",
+        "Give me murder laws"],
+        "responses":"gaining information"
+      }
+    ]
+    }
