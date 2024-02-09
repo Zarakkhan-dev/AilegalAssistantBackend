@@ -85,7 +85,6 @@ def Legal_Model(user_input):
                                         if str(i) in sections_check:
                                                response = random.choice(intent_info['responses'])
                                                return response
-                                               break
                                         elif int(i) >=324:
                                             not_found =1
                                             break
@@ -94,7 +93,7 @@ def Legal_Model(user_input):
                                        response=  "I am designed to facilitate the user with the information of Law under act 299 to act 324 of Pakistan "
                                        return response        
                 else:
-                    response = random.choice(intent_info['responses'])
+                    response = random.choice(intent['responses'])
                     return response
     else:
         response ="I do not understand..."
