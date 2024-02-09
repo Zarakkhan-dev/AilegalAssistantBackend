@@ -17,7 +17,7 @@ MIDDLEWARE = [
 ]
 STATICFILES_STORAGE =['whitenoise.storage.CompressedManifestStaticFilesStorage']
 STATIC_ROOT=os.pardir.join(BASE_DIR,'staticfiles')
-
+SECRET_KEY = os.environ['Secret']
 connection_string =os.environ['AZURE_POSTGRESQL_CONNECTIONSTRING']
 parameters ={pair.split('='):pair.split('=')[1] for pair in connection_string.split('')}
 DATABASES = {
