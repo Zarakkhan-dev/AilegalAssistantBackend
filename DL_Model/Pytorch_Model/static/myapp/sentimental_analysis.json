@@ -35,7 +35,7 @@
           "Law",
           "know",
           "what can you do for me",
-          "What the model work"
+          "What the model work","What is the chatbot Working "
         ],
         "responses": [
           "We only provide the information of Law under act 299 to act 324 of Pakistan",
@@ -108,8 +108,27 @@
         "Government publications on Section  PPC",
         "Reports on murder statistics under PPC",
         "Official documents related to PPC ",
-        "Give me murder laws"],
+        "Give me murder laws",
+      "299","300","301","302","303","304","305","306","307","308","309","310","311"
+      ,"312","313","314","315","316","317","318","319","320","321","322","323","324"],
         "responses":"gaining information"
+      },
+      {
+        "tag": "Summarize",
+        "patterns": ["Give me the summarization of","give me summarization", "What is the summarization of", "I want a summarization of this paragraph"],
+        "responses": 
+          "summarization"
+      },{
+        "tag": "Extreme rape and murder and kidnapping and evidence destroy",
+        "patterns": ["Javed Iqbal was a Pakistani serial killer who confessed to the rape and murder of 100 boys in Lahore, Pakistan. The case gained significant attention due to the gruesome nature of the crimes and the sheer number of victims involved.\nIn 1999, Iqbal sent a letter to the police confessing to his crimes and claiming that he had strangled and dismembered his victims, disposing of their bodies in acid-filled drums to destroy evidence. His confession led to the discovery of the remains of many of his victims. what could be the case outcome and predication",
+         " serial killer who confessed to the rape and murder two or moreand to much victom is involved in this case and destroy the body of victoms adn destroy is evidence what could be the case outcome and predication",
+         "A [nationality] serial killer confessed to extreme acts of rape, murder, and kidnapping, involving a large number of victims. The case gained significant attention due to the gruesome nature of the crimes and the sheer number of victims involved. In [year], the killer sent a letter to the authorities admitting to the crimes. The letter mentioned the method of disposing of victims' bodies in [description of disposal method] to destroy evidence. This confession ultimately led to the discovery of the remains of many of the victims. what could be the case outcome and predication",
+         "a person who kill the person and raped and destroy the evidence","intentional murdered of a person and rape the person "       
+        ],
+        "responses": [
+          "you put on trial and convicted of multiple counts of murder and sexual abuse.You will sentenced to death by hanging.",
+          "This case is a horrifying example of extreme criminal acts. The confession of the killer and the discovery of the victims' remains shed light on the extent of the atrocities committed. The authorities conducted a thorough investigation, leading to the conviction of the perpetrator on multiple counts of murder and sexual abuse. The killer faced the penalty of death by hanging for these heinous crimes. However, sentencing for such crimes can vary, with alternatives such as life imprisonment, solitary confinement, or other severe punishments also being considered. "
+        ]
       }
     ]
     }
