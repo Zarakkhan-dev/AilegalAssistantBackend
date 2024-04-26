@@ -133,9 +133,7 @@ def Summarization_Model(paragraph):
 
     for word in word_frequency.keys():
         word_frequency[word] =word_frequency[word]/max_frequency 
-
     sentence_token = [sentence  for sentence in document.sents];
-
     # print(sentence_token)
     sentence_scores={}
 
