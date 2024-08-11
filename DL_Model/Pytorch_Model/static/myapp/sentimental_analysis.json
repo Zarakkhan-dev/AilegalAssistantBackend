@@ -1,54 +1,148 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "hy",
-          "Hey",
-          "How are you",
-          "Is anyone there?",
-          "Hello",
-          "Good day"
-        ],
-        "responses": [
-          "Hey :-)",
-          "Hello, Welcome to the Legal Ai ChatBot",
-          "Hi there, what can I do for you?",
-          "Hi there, how can I help?",
-          "How can we  asset you?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
-        "responses": [
-          "See you later, thanks for visiting",
-          "Have a nice day",
-          "Bye! Come back again soon."
-        ]
-      },
-      {
-        "tag": "Knowedge",
-        "patterns": [
-          "information",
-          "Law",
-          "know",
-          "what can you do for me",
-          "What the model work","What is the chatbot Working "
-        ],
-        "responses": [
-          "We only provide the information of Law under act 299 to act 324 of Pakistan",
-          "I am designed to facilitate the user with the information of Law under act 299 to act 324 of Pakistan "
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
-      },{
-        "tag": "information",
-        "patterns":["What do you mean by the  act in law?",
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "hy",
+        "Hey",
+        "Hello",
+        "Good day",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Howdy",
+        "What's up",
+        "Greetings",
+        "How's it going?",
+        "Is anyone there?",
+        "How are you?",
+        "How do you do?",
+        "Yo",
+        "What's happening?"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, Welcome to the Legal Ai ChatBot",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "How can we assist you?",
+        "Hello! How can I be of service today?",
+        "Greetings! What can I do for you?",
+        "Hi, how can I assist you today?",
+        "Hello! What do you need help with?",
+        "Good day! How can I help you today?",
+        "Hi! How are you doing today?",
+        "Hello! How can we make your day better?",
+        "Hey! What can I assist you with today?"
+      ]
+    },
+    {
+      "tag": "farewell",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "See you",
+        "Take care",
+        "Catch you later",
+        "Farewell",
+        "Talk to you later",
+        "I have to go",
+        "Have a good day"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later!",
+        "Take care!",
+        "Bye! Come back soon!",
+        "Farewell! Have a wonderful day!",
+        "See you next time!",
+        "Goodbye! Feel free to reach out anytime!",
+        "Bye! Have a nice day!"
+      ]
+    },
+    {
+      "tag": "general",
+      "patterns": [
+        "What can you do?",
+        "What services do you offer?",
+        "Tell me about your services",
+        "What are your capabilities?",
+        "How can you assist me?",
+        "What do you specialize in?",
+        "Can you tell me more about your functions?",
+        "What help can I get from you?",
+        "What do you provide?"
+      ],
+      "responses": [
+        "I can help with legal information and assistance. What do you need?",
+        "I provide legal assistance and information. How can I help?",
+        "I can assist with various legal inquiries. What do you need help with?",
+        "I specialize in providing legal information and support. What can I do for you?",
+        "I can help with a variety of legal issues. What do you need assistance with?",
+        "I provide services related to legal advice and support. How can I assist you today?",
+        "I offer help with legal matters. What do you need help with?",
+        "I can provide information and support on legal topics. How can I assist?"
+      ]
+    }
+    
+    ,
+    {
+      "tag": "help",
+      "patterns": [
+        "Can you help me?",
+        "I need assistance",
+        "Can you assist me?",
+        "I need help",
+        "Help me please",
+        "Could you help?",
+        "Can you give me a hand?",
+        "I need support",
+        "Can you support me?",
+        "I need some help",
+        "We only provide the information of Law under act 299 to act 324 of Pakistan",
+        "I am designed to facilitate the user with the information of Law under act 299 to act 324 of Pakistan "
+      ],
+      "responses": [
+        "Sure, I'm here to help! What do you need?",
+        "Of course! How can I assist you?",
+        "Yes, I'd be happy to help. What's the issue?",
+        "I'm here to assist you. What do you need help with?",
+        "Sure, let me know how I can help!",
+        "Of course, I'm here to support you. What do you need?",
+        "I'm happy to help! What's the problem?",
+        "Yes, I'm here to assist. How can I help you today?"
+      ]
+    }
+,    
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "I appreciate it",
+        "Thanks a lot",
+        "Thank you so much",
+        "Thanks for your help",
+        "Thank you very much",
+        "Much appreciated"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "No problem!",
+        "My pleasure!",
+        "You're welcome, glad I could assist!",
+        "Anytime! I'm here to help!",
+        "No worries!",
+        "You're welcome, have a great day!"
+      ]
+    },
+    {
+      "tag": "information",
+      "patterns": [
+        "What do you mean by the  act in law?",
         "What is section  related to?",
         "Explain the section ?",
         "Which person is layable to ",
@@ -109,26 +203,497 @@
         "Reports on murder statistics under PPC",
         "Official documents related to PPC ",
         "Give me murder laws",
-      "299","300","301","302","303","304","305","306","307","308","309","310","311"
-      ,"312","313","314","315","316","317","318","319","320","321","322","323","324"],
-        "responses":"gaining information"
-      },
-      {
-        "tag": "Summarize",
-        "patterns": ["Give me the summarization of","give me summarization", "What is the summarization of", "I want a summarization of this paragraph"],
-        "responses": 
-          "summarization"
-      },{
-        "tag": "Extreme rape and murder and kidnapping and evidence destroy",
-        "patterns": ["Javed Iqbal was a Pakistani serial killer who confessed to the rape and murder of 100 boys in Lahore, Pakistan. The case gained significant attention due to the gruesome nature of the crimes and the sheer number of victims involved.\nIn 1999, Iqbal sent a letter to the police confessing to his crimes and claiming that he had strangled and dismembered his victims, disposing of their bodies in acid-filled drums to destroy evidence. His confession led to the discovery of the remains of many of his victims. what could be the case outcome and predication",
-         " serial killer who confessed to the rape and murder two or moreand to much victom is involved in this case and destroy the body of victoms adn destroy is evidence what could be the case outcome and predication",
-         "A [nationality] serial killer confessed to extreme acts of rape, murder, and kidnapping, involving a large number of victims. The case gained significant attention due to the gruesome nature of the crimes and the sheer number of victims involved. In [year], the killer sent a letter to the authorities admitting to the crimes. The letter mentioned the method of disposing of victims' bodies in [description of disposal method] to destroy evidence. This confession ultimately led to the discovery of the remains of many of the victims. what could be the case outcome and predication",
-         "a person who kill the person and raped and destroy the evidence","intentional murdered of a person and rape the person "       
-        ],
-        "responses": [
-          "you put on trial and convicted of multiple counts of murder and sexual abuse.You will sentenced to death by hanging.",
-          "This case is a horrifying example of extreme criminal acts. The confession of the killer and the discovery of the victims' remains shed light on the extent of the atrocities committed. The authorities conducted a thorough investigation, leading to the conviction of the perpetrator on multiple counts of murder and sexual abuse. The killer faced the penalty of death by hanging for these heinous crimes. However, sentencing for such crimes can vary, with alternatives such as life imprisonment, solitary confinement, or other severe punishments also being considered. "
-        ]
-      }
-    ]
+            "Can you please provide me the detail of section ",
+        "Can you provide me the detail of section ",
+        "299",
+        "300",
+        "301",
+        "302",
+        "303",
+        "304",
+        "305",
+        "306",
+        "307",
+        "308",
+        "309",
+        "310",
+        "311",
+        "312",
+        "313",
+        "314",
+        "315",
+        "316",
+        "317",
+        "318",
+        "319",
+        "320",
+        "321",
+        "322",
+        "323",
+        "324"
+      ],
+      "responses": "gaining information"
     }
+    ,
+    {
+      "tag": "Javed Iqbal Case",
+      "patterns": [
+        "Javed Iqbal was a Pakistani serial killer who confessed to the rape and murder of 100 boys in Lahore, Pakistan. The case gained significant attention due to the gruesome nature of the crimes and the sheer number of victims involved. What could be the case outcome and prediction?",
+        "Javed Iqbal's case involved the rape and murder of numerous boys in Lahore, Pakistan. He confessed to his crimes and claimed to have disposed of their bodies in acid-filled drums to destroy evidence. What could be the case outcome and prediction?",
+        "A notorious serial killer in Lahore, Pakistan, known for the rape and murder of over 100 boys, sent a letter confessing to his crimes in 1999. The confession detailed the disposal of victims' bodies in acid to destroy evidence. What could be the case outcome and prediction?",
+        "A person committed the extreme acts of rape, murder, and kidnapping, destroying the evidence. What could be the case outcome and prediction?",
+        "The intentional murder and rape of a victim raises questions about the case outcome and prediction.",
+        "I need legal advice regarding a case similar to the Javed Iqbal serial killings.",
+        "Can you provide legal assistance for a situation involving extreme criminal acts like those in the Javed Iqbal case?",
+        "What legal actions can be expected in a case where someone has committed multiple counts of murder, rape, and kidnapping similar to the Javed Iqbal case?",
+        "Seeking guidance for a situation where the evidence has been destroyed in a criminal case resembling the Javed Iqbal case.",
+        "I'm facing a situation where a person has confessed to extreme acts of violence, including rape and murder, like in the Javed Iqbal case. What are the potential legal outcomes?"
+      ],
+      "responses": [
+        "You will be put on trial and convicted of multiple counts of murder and sexual abuse. You will be sentenced to death by hanging.",
+        "This case is a horrifying example of extreme criminal acts. The confession of the killer and the discovery of the victims' remains shed light on the extent of the atrocities committed. The authorities conducted a thorough investigation, leading to the conviction of the perpetrator on multiple counts of murder and sexual abuse. The killer faced the penalty of death by hanging for these heinous crimes. However, sentencing for such crimes can vary, with alternatives such as life imprisonment, solitary confinement, or other severe punishments also being considered.",
+        "In cases resembling the Javed Iqbal serial killings, where there's evidence of multiple counts of murder, rape, and kidnapping, the legal process involves thorough investigation, trial, and sentencing. Depending on the evidence and circumstances, the perpetrator could face severe penalties, including death by hanging or life imprisonment."
+      ]
+    }
+    
+    ,
+    {
+      "tag": "Qandeel Baloch Murder Case",
+      "patterns": [
+        "I need legal advice regarding a case similar to the Qandeel Baloch murder.",
+        "Can you assist me with legal information related to the Qandeel Baloch case?",
+        "What are the legal implications if someone confesses to a murder due to online activities similar to the Qandeel Baloch case?",
+        "Seeking guidance for a situation where a family member confesses to murder because of provocative online activities, akin to the Qandeel Baloch case.",
+        "In a scenario like the Qandeel Baloch murder, where someone confesses to killing a family member due to online activities, what legal actions can be taken?",
+        "I'm facing a situation where a murder confession is made, citing online activities as the motive, similar to the Qandeel Baloch case. What legal steps should be taken?",
+        "Can you provide legal assistance for a case resembling the Qandeel Baloch murder?",
+        "A family member confessed to murdering another family member due to online activities. What legal consequences can they face?",
+        "What should be done if someone confesses to murder, stating online activities as the reason, similar to the Qandeel Baloch case?",
+        "I want to understand the legal process if someone admits to killing another person because of their online behavior, like the Qandeel Baloch case.",
+        "How can the law deal with a murder confession linked to online activities, as seen in the Qandeel Baloch case?",
+        "Is there legal support available for cases involving murder due to online activities, similar to what happened in the Qandeel Baloch case?",
+        "I'm dealing with a situation where someone has confessed to murder, mentioning online activities as the motive. What are the next steps?"
+      ],
+      "responses": [
+        "After confessing to the murder of Qandeel Baloch, Muhammad Waseem was arrested and charged under Pakistani law. Subsequently, he was convicted and sentenced to life imprisonment in September 2019.",
+        "In cases like the Qandeel Baloch murder, where someone confesses to killing due to online activities, the legal process involves arrest, charging under relevant laws, and subsequent trial. If found guilty, the individual can face severe penalties, including imprisonment or other appropriate legal action.",
+        "The Qandeel Baloch murder case highlights the seriousness of crimes related to online activities and family honor. If you're dealing with a similar situation, it's crucial to seek legal assistance promptly to understand your rights and options."
+      ]
+    },{
+      "tag": "Domestic Dispute Murder",
+      "patterns": [
+        "I confessed to murdering my spouse during a domestic dispute. What could happen?",
+        "What is the legal outcome if someone kills their partner in a fit of rage?",
+        "What are the possible sentences for murdering a spouse during an argument?",
+        "I accidentally killed my spouse in a heated argument. What are the legal consequences?",
+        "Murdered my partner during a fight, what can I expect legally?",
+        "If someone kills their spouse in a domestic dispute, what punishment could they face?",
+        "What happens if someone kills their spouse in a moment of anger?",
+        "What are the legal ramifications of killing a spouse during a domestic dispute?",
+        "Can someone get a lesser sentence for killing their spouse if it was an accident during a fight?",
+        "What does the law say about murder during domestic disputes?",
+        "How are cases handled when someone kills their spouse in a domestic argument?",
+        "I killed my spouse unintentionally during a fight. What are the legal consequences?",
+        "What legal actions follow if someone is charged with murdering their partner during an argument?",
+        "What kind of defense can be used if someone kills their spouse in a domestic dispute?",
+        "If found guilty of killing my spouse during an argument, what could be the sentence?",
+        "What factors affect the sentencing in a domestic dispute murder case?",
+        "What should I expect if I'm accused of killing my spouse during a heated argument?",
+        "What is the typical legal procedure in cases of spouse murder during a domestic fight?",
+        "Are there any defenses available for killing a spouse in a fit of rage?",
+        "What kind of penalties can one face for murdering their partner in a domestic dispute?",
+        "What are the potential outcomes for someone who kills their spouse in a domestic dispute?",
+        "Can self-defense be claimed in a domestic dispute that results in murder?",
+        "How serious is the charge for killing a spouse in a domestic argument?",
+        "What does the PPC say about killing a spouse during a domestic dispute?",
+        "Is life imprisonment always the sentence for domestic dispute murders?",
+        "Can mitigating factors reduce the sentence for killing a spouse during a fight?",
+        "What impact does intent have on the sentencing in domestic dispute murder cases?",
+        "How does the court view accidental killings during domestic disputes?",
+        "Can emotional distress be a defense in domestic dispute murder cases?",
+        "What legal steps should be taken if charged with murdering a spouse in a domestic fight?",
+        "How can someone defend themselves legally if accused of spouse murder during a domestic dispute?",
+        "What are the legal rights of someone accused of killing their spouse in a domestic dispute?",
+        "What should be the first step if someone kills their spouse in a domestic argument?",
+        "How do legal outcomes differ in cases of accidental versus intentional spouse killings in domestic disputes?",
+        "What is the role of evidence in determining the outcome of a domestic dispute murder case?",
+        "Can prior history of domestic abuse impact the legal outcome of a spouse murder case?",
+        "What kind of legal representation is recommended for someone accused of murdering their spouse during a fight?",
+        "How does the prosecution typically approach cases of domestic dispute murders?",
+        "What defenses are commonly used in cases of spouse murder during domestic disputes?",
+        "How can one prove it was an accidental killing during a domestic fight?",
+        "What are the chances of a reduced sentence for killing a spouse in a domestic dispute under mitigating circumstances?",
+        "What legal precedents exist for cases of spouse murder during a domestic argument?"
+      ],
+      "responses": [
+        "In such cases, if convicted of murder during a domestic dispute, the individual could face severe penalties, such as life imprisonment under Section 302 of the Pakistan Penal Code.",
+        "Murder during a domestic dispute typically results in a charge of life imprisonment if found guilty, as per Section 302 PPC.",
+        "The legal outcome for killing a spouse during a domestic dispute could range from life imprisonment to the death penalty, depending on the circumstances and evidence presented.",
+        "In cases of accidental killings during a domestic dispute, the charges and sentencing can vary significantly based on intent, evidence, and legal defense presented.",
+        "If someone kills their spouse during a domestic dispute, they may face charges of murder with severe penalties, though mitigating circumstances and evidence can impact the final judgment.",
+        "Defending against a charge of murdering a spouse in a domestic dispute often involves demonstrating lack of intent, self-defense, or emotional distress, which can influence sentencing.",
+        "Legal representation is crucial in such cases to navigate the complexities of the law and to present any mitigating factors that could reduce the severity of the sentence."
+      ]
+    }
+    
+,{
+  "tag": "Financial Gain Murder",
+  "patterns": [
+    "What happens if someone is found guilty of murdering for financial gain?",
+    "I poisoned my husband for insurance money. What will the court decide?",
+    "Murdering someone for financial reasons, what are the legal repercussions?",
+    "What is the sentence for killing someone to gain financially?",
+    "If convicted of murder for financial gain, what penalty can one expect?",
+    "What legal consequences are there for killing someone to obtain their assets?",
+    "I killed a relative to inherit their property. What will happen legally?",
+    "What does the law say about murder committed for financial benefits?",
+    "How are cases handled where the motive for murder is financial gain?",
+    "What are the penalties for a murder driven by the desire for money?",
+    "If someone murders for an inheritance, what can they be charged with?",
+    "What could be the outcome of a trial for someone who killed for financial gain?",
+    "What is the typical punishment for murdering someone for their wealth?",
+    "I killed my business partner for financial reasons. What should I expect legally?",
+    "What is the likely sentence if found guilty of murder with financial motives?",
+    "How severe are the penalties for financial gain murders under Pakistani law?",
+    "What kind of sentence can be imposed for a murder committed for monetary reasons?",
+    "What are the potential legal outcomes for someone who killed for financial gain?",
+    "What does the Pakistani Penal Code say about murders committed for financial gain?",
+    "If proven guilty of murdering someone to gain financially, what are the consequences?",
+    "What legal steps are taken if someone is accused of murder for financial gain?",
+    "Can financial gain be considered a motive in murder cases under Pakistani law?",
+    "What defenses might be available in a murder case involving financial gain?",
+    "What role does motive play in determining the sentence for murder under Section 302 PPC?",
+    "How do courts view murders committed for financial reasons?",
+    "What evidence is typically needed to convict someone of murder for financial gain?",
+    "Are there any mitigating factors that can reduce the sentence for financial gain murder?",
+    "What precedent exists for cases of murder committed for financial gain in Pakistan?",
+    "Can the death penalty be imposed for financial gain murders?",
+    "What are the long-term legal consequences of being convicted for murder with financial motives?"
+  ],
+  "responses": [
+    "Murder for financial gain is a grave offense, and if convicted, the individual can face the death penalty or life imprisonment under Section 302 PPC.",
+    "In cases where murder is committed for financial reasons, the court often imposes severe penalties such as the death sentence or life imprisonment.",
+    "The legal outcome for killing someone for financial gain typically involves the maximum penalties, including life imprisonment or the death penalty, under Section 302 PPC.",
+    "Conviction for murder driven by financial motives usually results in severe sentences, reflecting the premeditated and malicious nature of the crime.",
+    "If found guilty of murdering someone for financial gain, one can expect the harshest penalties under the law, including potential capital punishment or life imprisonment.",
+    "The court views financial gain as an aggravating factor in murder cases, often leading to the highest possible sentences to deter such crimes.",
+    "Legal consequences for financial gain murders are severe, aiming to punish the premeditated nature of the crime and to prevent similar offenses.",
+    "Prosecution in financial gain murder cases focuses on demonstrating the premeditation and financial motive, which can lead to maximum penalties upon conviction."
+  ]
+}
+,
+{
+  "tag": "Self-Defense Murder",
+  "patterns": [
+    "I killed someone in self-defense. What will happen legally?",
+    "What are the legal outcomes if a person kills in self-defense?",
+    "If I prove that I killed someone in self-defense, what can I expect?",
+    "What is the legal consequence of a self-defense killing?",
+    "Killing someone to protect myself, what does the law say?",
+    "Can I be acquitted if I killed someone in self-defense?",
+    "What are the legal ramifications of a self-defense killing?",
+    "How does the law treat cases of killing in self-defense?",
+    "What evidence is needed to prove self-defense in a murder case?",
+    "If someone attacks me and I kill them in self-defense, what will happen?",
+    "What happens if a murder is justified as self-defense?",
+    "Are there legal protections for killing in self-defense?",
+    "How can I defend myself legally if I killed someone in self-defense?",
+    "What are the possible defenses for killing someone in self-defense?",
+    "What should I do if I'm charged with murder but acted in self-defense?",
+    "Can I avoid punishment if I killed someone while defending myself?",
+    "What does Section 100 of the PPC say about self-defense killings?",
+    "Can self-defense be used as a legal defense in a murder trial?",
+    "What are the criteria for a self-defense claim in a murder case?",
+    "How can I prove that a killing was in self-defense?",
+    "What happens if self-defense is accepted by the court in a murder case?",
+    "Are there any precedents for acquittal in self-defense murder cases?",
+    "What legal standards must be met to claim self-defense in a murder case?",
+    "How does the burden of proof work in self-defense murder cases?",
+    "What role does intent play in self-defense murder cases?",
+    "Can self-defense lead to a reduced sentence if not acquitted?",
+    "What are the typical legal arguments in self-defense murder cases?",
+    "How does the law distinguish between self-defense and excessive force?",
+    "What are the implications of failing to prove self-defense in a murder case?",
+    "What are the legal outcomes if self-defense is partially accepted by the court?",
+    "How important is the perception of threat in self-defense murder cases?",
+    "Can previous threats or abuse be used to support a self-defense claim?",
+    "What are the possible penalties if self-defense is not accepted in court?",
+    "How can legal representation help in a self-defense murder case?",
+    "What are the steps to take immediately after a self-defense killing?",
+    "What does the law say about proportionality in self-defense cases?",
+    "How do courts evaluate the necessity of force in self-defense killings?",
+    "What is the difference between self-defense and premeditated murder in legal terms?",
+    "What is considered reasonable force in self-defense murder cases?",
+    "How does the legal system handle accidental killings during self-defense?",
+    "I accidently for my self defences kill a person what should be legal activities perform with me",
+    "For my self defence i kill the person what will be the outcomes of the case"
+  ],
+  "responses": [
+    "If proven that the killing was in self-defense, the individual may be acquitted under Section 100 of the Pakistan Penal Code.",
+    "Legal outcomes for self-defense killings can result in acquittal if the court is convinced that the act was necessary to protect oneself.",
+    "Killing in self-defense, if justified, can lead to acquittal as per Section 100 PPC, but it must be proven that there was a genuine threat to life.",
+    "In cases where self-defense is established, the accused may be acquitted, but it is crucial to provide sufficient evidence of the threat faced.",
+    "Self-defense killings are legally permissible under Section 100 PPC, provided it is demonstrated that the force used was necessary and proportionate.",
+    "An acquittal is possible in self-defense cases if the defense can clearly establish that there was an imminent threat to the individual's life or safety.",
+    "When self-defense is proven, the court may rule in favor of the defendant, recognizing the necessity to protect oneself from harm.",
+    "The burden of proof in self-defense cases lies with the defendant, who must show that their actions were justified under the circumstances.",
+    "Courts generally look for clear evidence of immediate danger and reasonable use of force when considering self-defense claims in murder cases.",
+    "Successful self-defense claims typically result in no criminal liability, but thorough investigation and legal proceedings are essential."
+  ]
+}
+
+,{
+  "tag": "Accidental Manslaughter",
+  "patterns": [
+    "I accidentally killed someone. What are the legal consequences?",
+    "What happens if someone dies because of an accident I caused?",
+    "Legal outcomes for accidental manslaughter?",
+    "If I accidentally caused a death, what could the court decide?",
+    "Killing someone by accident, what is the punishment?",
+    "What charges apply if I unintentionally caused someone's death?",
+    "What is the penalty for causing death by negligence?",
+    "I accidentally caused a fatal accident. What legal steps should I expect?",
+    "What are the legal repercussions of an accidental killing?",
+    "If I am responsible for an accidental death, what can the court sentence me to?",
+    "Can I be charged with manslaughter for an accidental death?",
+    "What are the typical sentences for accidental manslaughter?",
+    "How does the law treat cases of accidental death?",
+    "What happens if someone dies due to my accidental actions?",
+    "What legal actions follow if an accidental killing occurs?",
+    "How severe is the punishment for unintentional manslaughter?",
+    "What should I expect legally if I accidentally kill someone?",
+    "If found guilty of accidental manslaughter, what penalties might I face?",
+    "Can accidental deaths lead to imprisonment?",
+    "What are the differences in legal consequences between accidental and intentional killings?",
+    "I accidently killed the person what should be the end result of it",
+    "By mistaken someone come inf front of me and by accidently car hit and he died and what should be outome of it",
+    "my friend accidenlty murder and what should be the prediction of it"
+  ],
+  "responses": [
+    "Accidental manslaughter typically results in charges of manslaughter under Section 318 of the Pakistan Penal Code, which carries a lesser sentence than murder.",
+    "In cases of accidental death, the court may charge the individual with manslaughter, leading to imprisonment but usually not as severe as a murder conviction.",
+    "Accidentally causing a death could lead to manslaughter charges, with penalties that include imprisonment under Section 318 PPC, reflecting the lack of intent to kill.",
+    "The court considers the lack of intent in accidental manslaughter cases, often resulting in a more lenient sentence under Section 318 PPC compared to intentional murder.",
+    "Penalties for accidental manslaughter under Section 318 PPC can vary, but they typically include imprisonment, recognizing the unintentional nature of the act.",
+    "In cases of accidental manslaughter, legal outcomes depend on the circumstances, but the sentences are generally less severe than those for deliberate murder.",
+    "Accidental death leading to manslaughter charges can result in imprisonment, with the duration influenced by the specifics of the case and any mitigating factors.",
+    "When a death is caused accidentally, the legal focus is on negligence or recklessness, leading to manslaughter charges and potential imprisonment under Section 318 PPC.",
+    "Accidental manslaughter involves demonstrating the absence of intent to kill, often resulting in a reduced sentence as per Section 318 PPC.",
+    "The law treats accidental killings under manslaughter provisions, imposing penalties that reflect the inadvertent nature of the act, typically resulting in imprisonment."
+  ]
+}
+,{
+  "tag": "Premeditated Murder",
+  "patterns": [
+    "i planned to murder a person what should be the outcome if it",
+    "What are the legal outcomes for premeditated murder?",
+    "I planned and executed a murder. What will happen in court?",
+    "Legal consequences of committing a planned murder?",
+    "If someone is found guilty of premeditated murder, what are the penalties?",
+    "What does the law say about premeditated killing?",
+    "What is the punishment for a premeditated murder conviction?",
+    "How does the court handle cases of premeditated murder?",
+    "I carefully planned a murder. What legal consequences will I face?",
+    "What sentence can one expect for premeditated murder?",
+    "Premeditated murder charges and penalties?",
+    "What happens legally if you commit a premeditated murder?",
+    "Outcomes for premeditated homicide in court?",
+    "If convicted of premeditated murder, what are the legal repercussions?",
+    "What is the judicial process for a planned murder?",
+    "What can be the sentence for an intentional, pre-planned murder?",
+    "How severe are the punishments for premeditated murder?",
+    "Premeditated murder legal consequences?",
+    "What does a conviction for premeditated murder entail?",
+    "Legal ramifications of planning and committing a murder?",
+    "What are the court's actions in premeditated murder cases?",
+    "If I am charged with premeditated murder, what will happen?",
+    "I planned to murder the person what legal activites is peform on me"
+  ],
+  "responses": [
+    "Premeditated murder is one of the most serious offenses and typically results in the death penalty or life imprisonment under Section 302 PPC.",
+    "In cases of premeditated murder, the legal outcome often involves severe penalties, including the death sentence or life imprisonment.",
+    "Planning and executing a murder can lead to the harshest penalties, such as the death penalty or life imprisonment, as per Section 302 PPC.",
+    "The law treats premeditated murder with utmost severity, often resulting in either the death penalty or life imprisonment under Section 302 PPC.",
+    "For premeditated murder, the court usually imposes the maximum penalties, including the possibility of the death sentence or life imprisonment.",
+    "Conviction for premeditated murder generally leads to severe sentences, reflecting the intentional and planned nature of the crime, often resulting in death or life imprisonment.",
+    "Premeditated murder charges are met with the strictest punishments, typically involving either life imprisonment or the death penalty under Section 302 PPC.",
+    "The judicial process for premeditated murder involves a thorough trial, often concluding with severe penalties like the death penalty or life imprisonment if found guilty.",
+    "Individuals convicted of premeditated murder face severe legal consequences, with possible outcomes including life imprisonment or the death penalty under Section 302 PPC.",
+    "Premeditated murder is dealt with harshly under the law, with possible sentences including life imprisonment or the death penalty, reflecting the gravity of the offense."
+  ]
+}
+,{
+  "tag": "Self-Defense Justification",
+  "patterns": [
+    "How can I prove it was self-defense in a murder case?",
+    "What evidence is needed to justify self-defense in a murder trial?",
+    "Advice on building a self-defense case for a murder charge?",
+    "What are the legal standards for self-defense in a murder accusation?",
+    "How do I defend myself if I killed someone in self-defense?",
+    "What proof is required to claim self-defense in a homicide case?",
+    "How can I legally justify killing someone in self-defense?",
+    "What should I do if I acted in self-defense and caused someone's death?",
+    "How can I demonstrate that I killed someone to protect myself?",
+    "What are the criteria for self-defense in a murder case?",
+    "Can you provide guidance on proving self-defense in court?",
+    "What kind of evidence supports a self-defense claim?",
+    "If I killed someone in self-defense, what legal steps should I take?",
+    "How to prove that the killing was necessary to protect myself?",
+    "What defenses are available for self-defense killings?",
+    "How do I prepare a legal defense for a self-defense killing?",
+    "What constitutes self-defense in a murder charge?",
+    "What are the requirements for a self-defense plea in a murder case?",
+    "Can self-defense be a valid defense in a murder trial?",
+    "What documentation is needed to prove self-defense in court?"
+  ],
+  "responses": [
+    "To prove self-defense, you need to show that there was an imminent threat to your life or serious injury. Gather evidence such as witness statements, medical reports, and any physical evidence that supports your claim.",
+    "Document any threats or violence that occurred leading up to the incident. Your attorney can help you present this evidence in a way that clearly shows you acted out of necessity to protect yourself.",
+    "Consult with your lawyer to collect and organize evidence that supports your self-defense claim. This might include photos, videos, witness testimonies, and any other relevant documentation.",
+    "Self-defense requires demonstrating that you had a reasonable belief of imminent danger to your life. Collecting evidence like surveillance footage, injury photos, and police reports can be crucial.",
+    "Work closely with your legal counsel to build a solid self-defense case. They can help gather and present evidence such as past threats, a history of violence, or expert testimonies.",
+    "It's important to show that there was no reasonable means of escape and that the force used was proportionate to the threat. Evidence from the crime scene and expert witness statements can support this.",
+    "A successful self-defense argument often hinges on the immediate threat of harm. Detailed accounts from witnesses and forensic evidence can help establish this.",
+    "Gather as much evidence as possible, including any communications that indicate threats, medical records showing injuries, and expert analyses of the incident.",
+    "Your lawyer can guide you on the specifics required for a self-defense claim, including the necessity of the force used and the immediacy of the threat.",
+    "Make sure to document everything that happened before, during, and after the incident. Consistent and credible evidence will be key in proving self-defense in court."
+  ]
+}
+
+,{
+  "tag": "Mental Health Evaluation",
+  "patterns": [
+    "Can a mental health evaluation help in a murder case?",
+    "Should I get a psychological evaluation if I'm accused of murder?",
+    "How can mental health assessments impact a murder trial?",
+    "Is it important to have a mental health evaluation for a murder defense?",
+    "What role does mental health play in defending a murder charge?",
+    "Can a mental health assessment influence the outcome of my trial?",
+    "Is a psychological evaluation necessary for a murder defense?",
+    "How important is mental health in a murder case?",
+    "What kind of mental health evidence is needed in a murder trial?",
+    "Can mental health issues be used as a defense in a murder case?",
+    "What should I expect from a mental health evaluation in a murder case?",
+    "How do mental health evaluations affect sentencing in murder trials?",
+    "Can mental health evaluations reduce the severity of charges in a murder case?",
+    "What are the steps involved in getting a mental health evaluation for court?",
+    "How do I request a mental health evaluation for my murder defense?",
+    "What is the process for undergoing a psychological evaluation in a criminal case?",
+    "Can previous mental health issues impact a murder trial outcome?",
+    "How do courts view mental health evidence in murder cases?",
+    "What are the benefits of having a mental health evaluation in a murder defense?",
+    "Can a psychological evaluation prove insanity in a murder trial?"
+  ],
+  "responses": [
+    "A mental health evaluation can be crucial, especially if there are questions about your state of mind during the incident. It can provide evidence that might support a defense of insanity or diminished capacity.",
+    "Consult with your attorney about the benefits of a psychological evaluation. It can offer insights into your mental state and potentially influence the court's perspective on your case.",
+    "Mental health assessments can play a significant role in your defense strategy. They might help in understanding your actions and could be pivotal if you're pursuing an insanity defense or similar argument.",
+    "A comprehensive mental health evaluation can help establish whether you were capable of understanding the nature of your actions during the crime.",
+    "Psychological evaluations are often used to determine if there were any mental illnesses that could have affected your behavior, potentially leading to a different legal outcome.",
+    "Mental health evidence can be used to argue for diminished responsibility, potentially resulting in reduced charges or sentences.",
+    "The court may consider the results of a mental health evaluation when deciding on the appropriate sentence if convicted.",
+    "To request a mental health evaluation, discuss this with your lawyer who can file the necessary motions with the court.",
+    "The process of a mental health evaluation typically involves interviews, psychological testing, and review of your medical history.",
+    "Courts often give significant weight to mental health evidence, especially if it is presented by a credible expert witness."
+  ]
+},
+{
+  "tag": "Sabeen Mahmud Murder Case",
+  "patterns": [
+    "What happened in the Sabeen Mahmud murder case?",
+    "Can you provide information about the Sabeen Mahmud murder case?",
+    "Tell me about the Sabeen Mahmud murder case in Pakistan.",
+    "What were the details of the Sabeen Mahmud murder case?",
+    "I'm interested in learning more about the Sabeen Mahmud murder case.",
+    "What were the outcomes of the trial in the Sabeen Mahmud murder case?",
+    "I want to know about the investigation and charges in the Sabeen Mahmud murder case.",
+    "What controversies surrounded the Sabeen Mahmud murder case?",
+    "What was the impact of the Sabeen Mahmud murder case on human rights activism in Pakistan?",
+    "How can I find more information about the Sabeen Mahmud murder case?",
+    "Give me an overview of the Sabeen Mahmud murder case.",
+    "I need details on the Sabeen Mahmud murder case. Can you help?",
+    "Could you provide insights into the legal proceedings of the Sabeen Mahmud murder case?",
+    "What led to the arrest of the suspects in the Sabeen Mahmud murder case?",
+    "Were there any significant developments in the investigation of the Sabeen Mahmud murder case?",
+    "Did the Sabeen Mahmud murder case lead to any policy changes or reforms regarding witness protection?",
+    "How did the Sabeen Mahmud murder case impact public perception of human rights activism in Pakistan?",
+    "Is there any specific organization or website where I can find reliable information about the Sabeen Mahmud murder case?"
+  ],
+  "responses": [
+    "Sabeen Mahmud, a prominent human rights activist and founder of The Second Floor (T2F) cafe, was shot dead on April 24th, 2015, shortly after hosting a seminar titled 'Unsilencing Balochistan.' The incident occurred as she was leaving T2F with her mother, ambushed by unidentified gunmen on a motorcycle at a traffic light.",
+    "The murder of Sabeen Mahmud was registered as a targeted killing under the Anti-Terrorism Act (ATA) due to its possible link to her activism. Police suspected involvement of extremist groups due to her vocal stance on social issues. A breakthrough in the investigation came when authorities arrested a group linked to the Safoora Goth attack, and some suspects confessed to killing Sabeen due to her views on social issues.",
+    "In the outcome of the trial, a military court sentenced five suspects to death in 2016, although these sentences were later challenged in higher courts. The case drew controversy, especially after a key witness, Sabeen's driver, was shot dead a few months later, raising concerns about witness protection and the safety of human rights activists in Pakistan.",
+    "To find more information about the Sabeen Mahmud murder case, you can search news articles using terms like 'Sabeen Mahmud murder case Pakistan.' However, it's essential to be critical of online sources and prioritize reputable news outlets for accurate information."
+  ]
+}
+
+
+,{
+  "tag": "Plea Bargain Considerations",
+  "patterns": [
+    "Should I consider a plea bargain in a murder case?",
+    "Is it wise to take a plea deal for a murder charge?",
+    "What are the pros and cons of accepting a plea bargain in a murder trial?",
+    "Advice on plea bargaining for a murder accusation?",
+    "When is it beneficial to agree to a plea deal in a murder case?",
+    "How does accepting a plea bargain affect the outcome of a murder trial?",
+    "Can you explain the process of negotiating a plea deal for a murder charge?",
+    "What factors should I consider when evaluating a plea bargain offer in a murder case?",
+    "Is there a chance for a reduced sentence if I agree to a plea bargain for murder?",
+    "What are the potential consequences of rejecting a plea deal in a murder trial?",
+    "Are there any risks associated with accepting a plea bargain for a murder offense?",
+    "What alternatives to a plea bargain exist for resolving a murder case?",
+    "Should I trust the prosecutor's recommendations regarding a plea deal for murder?",
+    "Can I negotiate the terms of a plea bargain for a murder charge?",
+    "How does the strength of evidence impact the decision to accept or reject a plea bargain in a murder case?",
+    "Is it possible to change my mind about a plea bargain after initially agreeing to it for a murder charge?",
+    "Can I request a plea bargain if I believe the murder charge is unjustified?",
+    "What role does the severity of the murder charge play in the decision to accept a plea bargain?",
+    "Are there specific legal requirements for a plea bargain agreement in a murder case?",
+    "Should I disclose all information to my lawyer before considering a plea bargain for a murder accusation?",
+    "How does the potential sentence in a murder trial influence the decision-making process regarding a plea bargain?",
+    "Is community sentiment a factor in plea bargaining for a murder case?",
+    "What are the long-term consequences of accepting a plea bargain for murder?"
+  ],
+  "responses": [
+    "Considering a plea bargain can be beneficial in reducing your sentence, but it's important to weigh the pros and cons with your attorney. A plea deal may avoid the uncertainty of a trial but could still result in significant penalties.",
+    "Discuss the possibility of a plea bargain with your lawyer. They can help you understand the potential outcomes and whether accepting a deal is in your best interest given the specifics of your case.",
+    "A plea bargain might be advantageous if the evidence against you is strong. However, it's crucial to thoroughly discuss this option with your legal counsel to ensure you are making the best decision for your situation."
+  ]
+}
+
+,{
+  "tag": "Evidence Handling Advice",
+  "patterns": [
+    "How should I handle evidence in a murder case?",
+    "What is the best way to manage evidence for a murder trial?",
+    "Advice on dealing with evidence when accused of murder?",
+    "What should I do with evidence if I'm involved in a murder investigation?",
+    "How to properly handle and present evidence in a murder case?",
+    "What steps should I take to preserve evidence in a homicide investigation?",
+    "Can you provide guidance on collecting evidence in a murder case?",
+    "I need help understanding the importance of preserving evidence in a murder trial.",
+    "What are the legal implications of mishandling evidence in a murder case?",
+    "How can I ensure that evidence is admissible in court during a murder trial?",
+    "Is there a specific protocol for documenting and storing evidence in a homicide investigation?",
+    "What should I know about chain of custody procedures for evidence in a murder case?",
+    "I'm unsure about what to do if I discover potential evidence related to a murder. Can you advise?",
+    "Are there any guidelines for handling digital evidence in a murder investigation?",
+    "Can you explain the role of forensic analysis in evaluating evidence for a murder trial?",
+    "How can I protect myself legally when collecting evidence that might be relevant to a murder case?",
+    "What should I do if I suspect that evidence has been tampered with in a murder investigation?",
+    "I'm concerned about the credibility of evidence in a murder case. What steps can I take to address this?",
+    "What are the consequences of withholding evidence in a murder trial?",
+    "How should I respond if law enforcement requests evidence from me in a murder investigation?"
+  ],
+  "responses": [
+    "It's critical to preserve all evidence and avoid tampering with it. Document everything and provide your lawyer with all relevant information. Let your attorney handle the submission of evidence to ensure it is presented legally and effectively.",
+    "Do not alter, hide, or destroy any evidence. Keep everything in its original state and hand it over to your legal representative. They will know the proper procedures to follow for evidence submission.",
+    "Ensure all evidence is preserved and documented accurately. Discuss with your lawyer the best way to handle and present the evidence to support your defense in the most effective way possible."
+  ]
+}
+
+
+    
+  ]
+}

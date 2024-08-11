@@ -8,7 +8,7 @@ import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
 from string import punctuation
 from heapq import nlargest
-import os
+import os ,re
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 json_file_path_1 = os.path.join(settings.STATIC_ROOT, 'myapp', 'sentimental_analysis.json')
 json_file_path_2 = os.path.join(settings.STATIC_ROOT, 'myapp', 'ppc_Acts_info.json')
@@ -54,6 +54,11 @@ def Legal_Model(user_input):
     sections_check = sentence
     ignore_words = ['?', '.', '!']
     check_Text = [stem(w) for w in sections_check if w not in ignore_words]
+
+    section_check =check_sections(user_input)
+    if section_check =="not found":
+        response=  "I am designed to facilitate the user with the information of Law under act 299 to act 324 of Pakistan "
+        return response  
     if("summar"  in check_Text ):
         response =Summarization_Model(user_input)
         return response
@@ -149,3 +154,24 @@ def Summarization_Model(paragraph):
     final_summary = [word.text for word in  summary]
     summary =' '.join(final_summary);
     return summary
+
+def  check_sections(input):
+    
+    def find_numbers_in_string(input_string):
+        numbers = re.findall(r'\d+', input_string)
+        return [int(num) for num in numbers]
+
+    result = find_numbers_in_string(input)
+    print("Numbers found in the string:", result)
+
+    check =0
+    if(len(result) !=0):
+        for i in range (299,325):
+            if (i not in result):
+                check = check+1
+
+
+    print(check)
+    if(check==26):
+        return "not found"
+
